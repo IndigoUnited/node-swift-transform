@@ -1,0 +1,37 @@
+{
+  "name": "swift-transform",
+  "version": "0.1.0",
+  "description": "Parallelized transform streams for everyone!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly",
+    "test-cov": "istanbul cover --dir test/coverage _mocha && echo open test/coverage/lcov-report/index.html"
+  },
+  "bugs": {
+    "url": "https://github.com/IndigoUnited/node-swift-transform/issues/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IndigoUnited/node-swift-transform.git"
+  },
+  "keywords": [
+    "transform",
+    "stream",
+    "parallel",
+    "parallelized",
+    "concurrent",
+    "async",
+    "queue"
+  ],
+  "author": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.4.1"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5"
+  }
+}
