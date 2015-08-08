@@ -493,7 +493,7 @@ describe('SwiftTransform', function () {
     describe('modify', function () {
         it('should not modify twice', function () {
             var stream = new TransformStream();
-            var queue;
+            var swift;
 
             stream._transform = function (data, encoding, callback) {
                 callback(data);
@@ -501,11 +501,11 @@ describe('SwiftTransform', function () {
 
             swiftTransform(stream, 10);
 
-            queue = stream._swiftQueue;
-            expect(queue).to.be.ok();
+            swift = stream._swiftTransform;
+            expect(swift).to.be.ok();
 
             swiftTransform(stream, 10);
-            expect(stream._swiftQueue).to.be(queue);
+            expect(stream._swiftTransform).to.be(swift);
         });
     });
 });
