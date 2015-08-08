@@ -39,6 +39,8 @@ module.exports = MyTransformStream;
 In cases you have a transform stream which you do not own but want to parallelize it:
 
 ```js
+var swiftTransform = require('swift-transform');
+
 readableStream
 .pipe(swiftTransform(transformStream, 10))
 .pipe(writableStream);
