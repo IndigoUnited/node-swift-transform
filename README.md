@@ -1,4 +1,4 @@
-# swift-transform [![Build Status](https://travis-ci.org/IndigoUnited/node-swift-transform.svg?branch=master)](https://travis-ci.org/IndigoUnited/node-swift-transform)
+# swift-transform [![Build Status](https://travis-ci.org/IndigoUnited/node-swift-transform.svg?branch=master)](https://travis-ci.org/IndigoUnited/node-swift-transform) [![Coverage Status](https://coveralls.io/repos/IndigoUnited/node-swift-transform/badge.png?branch=master)](https://coveralls.io/r/IndigoUnited/node-swift-transform?branch=master)
 
 Parallelized transform streams for everyone!
 
