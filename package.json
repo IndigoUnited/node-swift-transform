@@ -1,6 +1,6 @@
 {
   "name": "swift-transform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parallelized transform streams for everyone!",
   "main": "index.js",
   "scripts": {
