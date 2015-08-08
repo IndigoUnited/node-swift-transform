@@ -488,6 +488,45 @@ describe('SwiftTransform', function () {
             rstream.push({ nr: 3 });
             rstream.push(null);
         });
+
+        it('should work for a considerable amount of work', function (next) {
+            var tstream;
+            var rstream = new ReadableStream({ objectMode: true });
+            var inflightTransforms = 0;
+            var x;
+            var bufferedData = [];
+
+            tstream = createSwiftStream({
+                transform: function (data, encoding, callback) {
+                    inflightTransforms += 1;
+
+                    expect(inflightTransforms <= 15).to.be(true);
+
+                    setTimeout(function () {
+                        inflightTransforms -= 1;
+                        callback(null, data);
+                    }, data.nr);
+                }
+            }, { objectMode: true, concurrency: 15 });
+
+            tstream
+            .on('data', function (data) {
+                bufferedData.push(data);
+            })
+            .on('end', function () {
+                expect(bufferedData.length).to.be(100);
+                expect(inflightTransforms).to.be(0);
+                next();
+            });
+
+            rstream.pipe(tstream);
+
+            for (x = 0; x < 100; x += 1) {
+                rstream.push({ nr: Math.floor(Math.random() * 1000) });
+            }
+
+            rstream.push(null);
+        });
     });
 
     describe('modify', function () {
