@@ -91,7 +91,7 @@ function modify(stream, concurrency) {
 
     stream._swiftTransform = {};
 
-    // Copy user transform to private methods & replace with ours
+    // Copy user transform & flush methods and replace with ours
     stream._swiftTransform.transform = stream._transform;
     stream._swiftTransform.flush = stream._flush;
     stream._transform = transform;
