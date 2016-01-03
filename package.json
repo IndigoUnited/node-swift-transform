@@ -27,11 +27,11 @@
   "author": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
   "license": "MIT",
   "dependencies": {
-    "async": "^1.4.1"
+    "async": "^1.5.1"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
-    "istanbul": "^0.3.17",
-    "mocha": "^2.2.5"
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
   }
 }

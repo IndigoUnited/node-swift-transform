@@ -1,10 +1,10 @@
 'use strict';
 
-var TransformStream   = require('stream').Transform;
-var ReadableStream    = require('stream').Readable;
-var expect            = require('expect.js');
+var TransformStream = require('stream').Transform;
+var ReadableStream = require('stream').Readable;
+var expect = require('expect.js');
 var createSwiftStream = require('./util/createSwiftStream');
-var swiftTransform    = require('../index');
+var swiftTransform = require('../index');
 
 describe('SwiftTransform', function () {
     describe('drop-in replacement', function () {
@@ -548,4 +548,3 @@ describe('SwiftTransform', function () {
         });
     });
 });
-

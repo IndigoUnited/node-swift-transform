@@ -1,8 +1,8 @@
 'use strict';
 
-var util            = require('util');
+var util = require('util');
 var TransformStream = require('stream').Transform;
-var async           = require('async');
+var async = require('async');
 
 function SwiftTransformStream(options) {
     TransformStream.call(this, options);

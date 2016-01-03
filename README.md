@@ -1,4 +1,18 @@
-# swift-transform [![Build Status](https://travis-ci.org/IndigoUnited/node-swift-transform.svg?branch=master)](https://travis-ci.org/IndigoUnited/node-swift-transform) [![Coverage Status](https://coveralls.io/repos/IndigoUnited/node-swift-transform/badge.png?branch=master)](https://coveralls.io/r/IndigoUnited/node-swift-transform?branch=master)
+# swift-transform
+
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
+
+[npm-url]:https://npmjs.org/package/swift-transform
+[downloads-image]:http://img.shields.io/npm/dm/swift-transform.svg
+[npm-image]:http://img.shields.io/npm/v/swift-transform.svg
+[travis-url]:https://travis-ci.org/IndigoUnited/node-swift-transform
+[travis-image]:http://img.shields.io/travis/IndigoUnited/node-swift-transform.svg
+[coveralls-url]:https://coveralls.io/r/IndigoUnited/node-swift-transform
+[coveralls-image]:https://img.shields.io/coveralls/IndigoUnited/node-swift-transform.svg
+[david-dm-url]:https://david-dm.org/IndigoUnited/node-swift-transform
+[david-dm-image]:https://img.shields.io/david/IndigoUnited/node-swift-transform.svg
+[david-dm-dev-url]:https://david-dm.org/IndigoUnited/node-swift-transform#info=devDependencies
+[david-dm-dev-image]:https://img.shields.io/david/dev/IndigoUnited/node-swift-transform.svg
 
 Parallelized transform streams for everyone!
 
