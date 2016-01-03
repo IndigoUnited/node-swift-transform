@@ -35,7 +35,7 @@ function MyTransformStream() {
     SwiftTransformStream.call(this, { objectMode: true, concurrency: 5 });
 }
 
-util.inherits(Stream, SwiftTransformStream);
+util.inherits(MyTransformStream, SwiftTransformStream);
 
 // ------------------------------------
 
