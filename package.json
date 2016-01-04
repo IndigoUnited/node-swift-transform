@@ -4,9 +4,9 @@
   "description": "Parallelized transform streams for everyone!",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "test-cov": "istanbul cover --dir test/coverage _mocha && echo open test/coverage/lcov-report/index.html",
-    "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly"
+    "test": "mocha -R spec --bail",
+    "test-cov": "istanbul cover --dir test/coverage _mocha -- --bail && echo open test/coverage/lcov-report/index.html",
+    "test-travis": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --bail && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "bugs": {
     "url": "https://github.com/IndigoUnited/node-swift-transform/issues/"
@@ -30,6 +30,7 @@
     "async": "^1.5.1"
   },
   "devDependencies": {
+    "coveralls": "^2.11.6",
     "expect.js": "^0.3.1",
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4"

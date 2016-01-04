@@ -64,6 +64,7 @@ readableStream
 ## Tests
 
 `$ npm test`
+`$ npm test-cov` to get coverage report
 
 
 ## License
