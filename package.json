@@ -4,9 +4,9 @@
   "description": "Parallelized transform streams for everyone!",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec --bail",
-    "test-cov": "istanbul cover --dir test/coverage _mocha -- --bail && echo open test/coverage/lcov-report/index.html",
-    "test-travis": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --bail && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "mocha --timeout 10000 --bail",
+    "test-cov": "istanbul cover --dir test/coverage _mocha -- --timeout 10000 --bail && echo open test/coverage/lcov-report/index.html",
+    "test-travis": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --timeout 10000 --bail && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "bugs": {
     "url": "https://github.com/IndigoUnited/node-swift-transform/issues/"
