@@ -6,9 +6,9 @@
 [downloads-image]:http://img.shields.io/npm/dm/swift-transform.svg
 [npm-image]:http://img.shields.io/npm/v/swift-transform.svg
 [travis-url]:https://travis-ci.org/IndigoUnited/node-swift-transform
-[travis-image]:http://img.shields.io/travis/IndigoUnited/node-swift-transform.svg
+[travis-image]:http://img.shields.io/travis/IndigoUnited/node-swift-transform/master.svg
 [coveralls-url]:https://coveralls.io/r/IndigoUnited/node-swift-transform
-[coveralls-image]:https://img.shields.io/coveralls/IndigoUnited/node-swift-transform.svg
+[coveralls-image]:https://img.shields.io/coveralls/IndigoUnited/node-swift-transform/master.svg
 [david-dm-url]:https://david-dm.org/IndigoUnited/node-swift-transform
 [david-dm-image]:https://img.shields.io/david/IndigoUnited/node-swift-transform.svg
 [david-dm-dev-url]:https://david-dm.org/IndigoUnited/node-swift-transform#info=devDependencies
