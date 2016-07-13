@@ -27,7 +27,7 @@
   "author": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
   "license": "MIT",
   "dependencies": {
-    "async": "^1.5.1"
+    "async": "^2.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.6",
