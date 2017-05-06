@@ -11,7 +11,7 @@
 [coveralls-image]:https://img.shields.io/coveralls/IndigoUnited/node-swift-transform/master.svg
 [david-dm-url]:https://david-dm.org/IndigoUnited/node-swift-transform
 [david-dm-image]:https://img.shields.io/david/IndigoUnited/node-swift-transform.svg
-[david-dm-dev-url]:https://david-dm.org/IndigoUnited/node-swift-transform#info=devDependencies
+[david-dm-dev-url]:https://david-dm.org/IndigoUnited/node-swift-transform?type=dev
 [david-dm-dev-image]:https://img.shields.io/david/dev/IndigoUnited/node-swift-transform.svg
 
 Parallelized transform streams for everyone!
